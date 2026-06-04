@@ -125,15 +125,21 @@ svg {
 }
 
 .logo {
-    font-family: var(--font-display);
-    font-size: 1.8rem;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #fff, var(--accent-3));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 18px rgba(0, 255, 225, 0.25);
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 48px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 225, 0.35));
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logo-img:hover {
+    filter: drop-shadow(0 0 18px rgba(0, 255, 225, 0.65));
+    transform: scale(1.05);
 }
 
 .nav-links {
@@ -824,8 +830,8 @@ footer {
         padding: 0 6%;
     }
 
-    .logo {
-        font-size: 1.3rem;
+    .logo-img {
+        height: 38px;
     }
 
     .menu-toggle {
