@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/laserframe.png" width="100%" />
+<img src="./assets/laserframegithubBanner.png" width="100%" />
 
 # Laser Frame Studio
 
